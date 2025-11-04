@@ -43,10 +43,14 @@
 <form>
   <fieldset>
     <legend class="legend">ENTER YOUR NAME TO CONTINUE</legend>
-    <h1 class="welcome" id="myH1">WELCOME</h1>
-    <label>username:</label>
-    <input id="myText"> <br><br>
-    <button id="mySubmit">submit</button>
+    <label for="">username</label>
+  <input type="text" name="" id="username" placeholder="Enter username">
+  <button onclick="
+    const username = document.getElementById('username').value;
+    document.getElementById('welcome').innerText = 'Welcome, ' + username + ' conttinue browsing our website';
+  ">Register</button>
+  <p class="welcome" id="welcome"></p>
+    
   </fieldset>
 </form>
 <fieldset>
@@ -199,6 +203,7 @@
     <script src="web.js"></script>
 </body>
 </html>
+
 
 
 
